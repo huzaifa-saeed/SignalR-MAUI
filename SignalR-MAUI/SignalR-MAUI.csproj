@@ -52,4 +52,13 @@
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.11" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Data\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Data\" />
+    </ItemGroup>
 </Project>
